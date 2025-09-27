@@ -2,13 +2,15 @@ import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Navbar from "../../common/widgets/navbar";
 
-export default function ActivitiesPage() {
+const AttendancePage = () => {
   return (
     <SafeAreaView>
-      <Navbar title="Activities" />
+      <Navbar title="Attendance" />
       <View>
-        <Text>ActivitiesPage</Text>
+        <Text>Attendace page</Text>
       </View>
     </SafeAreaView>
   );
-}
+};
+
+export default AttendancePage;

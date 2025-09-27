@@ -1,7 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
-export default function TabLayout(){
+export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
@@ -26,6 +26,15 @@ export default function TabLayout(){
         }}
       />
       <Tabs.Screen
+        name="attendance"
+        options={{
+          title: "Attendance",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="calendar-clear-outline" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="nfc"
         options={{
           title: "NFC",
@@ -35,11 +44,20 @@ export default function TabLayout(){
         }}
       />
       <Tabs.Screen
-        name="activities"
+        name="feed"
         options={{
-          title: "Activities",
+          title: "Feed",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="newspaper" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: "Profile",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person" size={24} color={color} />
           ),
         }}
       />
